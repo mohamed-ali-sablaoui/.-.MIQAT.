@@ -1,0 +1,116 @@
+
+/* DARK MODE */
+
+body.dark-mode {
+    color-scheme:dark;
+    --paper:#111b17;
+    --white:#1b2922;
+    --ink:#e8eee9;
+    --muted:#a6b4aa;
+    --border:#304338;
+    --green3:#243c30;
+    --orange2:#49351f;
+}
+
+body.dark-mode .location-box,
+body.dark-mode .weather-detail,
+body.dark-mode .hour-card,
+body.dark-mode .forecast-card,
+body.dark-mode .prayer-card:not(.active),
+body.dark-mode .sun-card,
+body.dark-mode .extra-card,
+body.dark-mode .settings-card {
+    background:#1b2922;
+    color:#e8eee9;
+}
+
+body.dark-mode .location-controls select {
+    background:#24362b;
+    color:#e8eee9;
+    border-color:#304338;
+}
+
+body.dark-mode .intro h2,
+body.dark-mode .section-heading h2,
+body.dark-mode .extra-card h3 {
+    color:#c5e0ce;
+}
+
+body.dark-mode .dhikr {
+    background:#24362b;
+}
+
+body.dark-mode .dhikr-ar {
+    color:#d0e8d7;
+}
+
+body.dark-mode .ramadan-box {
+    background:#332b1d;
+    border-color:#5c482b;
+}
+
+body.dark-mode .ramadan-item {
+    background:#453923;
+}
+
+body.dark-mode .ramadan-item strong,
+body.dark-mode .ramadan-box h3 {
+    color:#ffd18a;
+}
+
+/* Contraste et surfaces complémentaires du thème sombre */
+body.dark-mode .location-box,
+body.dark-mode .weather-detail,
+body.dark-mode .hour-card,
+body.dark-mode .forecast-card,
+body.dark-mode .prayer-card:not(.active),
+body.dark-mode .sun-card,
+body.dark-mode .extra-card,
+body.dark-mode .settings-card {
+    border-color:var(--border);
+}
+body.dark-mode .prayer-card:not(.active) p,
+body.dark-mode .forecast-description,
+body.dark-mode .hour-card p,
+body.dark-mode .hour-card small,
+body.dark-mode .weather-detail p,
+body.dark-mode .sun-card p,
+body.dark-mode .settings-row p {
+    color:var(--muted);
+}
+body.dark-mode .btn-light {
+    background:#294436;
+    color:#d5eadb;
+}
+body.dark-mode .dhikr-controls span {color:var(--muted);}
+body.dark-mode .alert-box {
+    background:#422b27;
+    border-color:#70463d;
+    color:#ffc1ae;
+}
+body.dark-mode .rain-info {
+    background:#203746;
+    border-color:#35596c;
+    color:#b9e2f5;
+}
+body.dark-mode .switch span {background:#53645a;}
+body.dark-mode .switch input:checked + span {background:#398568;}
+body.dark-mode .qibla-compass {
+    background:#243c30;
+    border-color:#385b47;
+}
+body.dark-mode .compass-inner {border-color:#6d967b;}
+body.dark-mode .compass-north,
+body.dark-mode .qibla-result strong {color:#c5e0ce;}
+body.dark-mode .ramadan-item {color:#f2e5cc;}
+
+button:disabled {
+    opacity:.6;
+    cursor:not-allowed;
+    transform:none!important;
+}
+
+:focus-visible {
+    outline:3px solid var(--orange);
+    outline-offset:3px;
+}
